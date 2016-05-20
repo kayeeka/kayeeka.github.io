@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/roundslider.css">
+</head>
+<body>
+
+<div id="wrapper">
+  <div id="toplogo">
+    <h1><img src="img/white_logo.png" alt="logo"></h1>
+  </div>
+
+  <div id="container">
+    <div id="circle">
+      <div id="type"></div>
+      <div id="icon">
+        <img src="logo/icon.png" alt="abemalogo">
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+  <script src="roundslider.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $("#type").roundSlider({
+          value: 1,
+          min: 1,
+          max: 10,
+          drag: "onValueChange",
+          handleShape:'dot'
+      });
+    });
+
+    function onValueChange(e){
+      console.log(e.value);
+      var srcValue = 'logo/icon'+e.value+'.png'
+      var bgValue = 'bg/bg'+e.value+'.png'
+      $('#container').css('background', 'url(' + bgValue + ') 0 0 no-repeat');
+      $('#icon').find('img').attr('src',srcValue);
+    }
+  </script>
+
+  <div id="serviceinfo">
+
+    <div id="servicenav">
+      <div id="ss">
+      <h1><img src="img/serviceinfo.png" alt="servicetitle" />
+      </h1>
+      <p><img src="img/search.png" alt="search"></p>
+      </div>
+
+      <nav id="gnav">
+        <ul>
+          <li>
+            <a href="#"><img src="img/all.png" alt="all"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/music.png" alt="music"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/game.png" alt="game"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/community.png" alt="com"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/other.png" alt="other"></a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="signleft"><img src="img/left.png" alt="leftsign" ></div>
+
+    <div class="serviceinfo1">
+      <figure>
+      <img src="img/abema.png" alt="abema">
+      <figcaption>
+        <p>AbemaTV（アベマティーヴィー）は、多彩な番組がすべて無料で見られます。</p>
+        <p><a href="#">サービス詳細へ</a></p>
+      </figcaption>
+      </figure>
+
+      <figure>
+      <img src="img/live.png" alt="live" />
+      <figcaption>
+        <p>ドームライブで熱狂し、野外フェスで開放的に。「LIVE YOU」はあなたの好きな曲をライブ音源に変えることのできる新感覚のミュージックアプリ。</p>
+        <p><a href="#">サービス詳細へ</a></p>
+      </figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/awa.png" alt="awa">
+      <figcaption>
+        <p>国内最大級の楽曲数を誇る定額制音楽配信サービス。「手作りのプレイリスト」×「リコメンド機能」により、まったく新しい音楽体験をお届けします。</p>
+        <p><a href="#">サービス詳細へ</a></p>
+      </figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/radio.png" alt="radio" class="last">
+      <figcaption>
+        <p>ゆるいのに本格的"なトークラジオアプリ♪スマホ片手に、あなたもパーソナリティになって世界中に声を届けてみませんか？</p>
+        <p><a href="#">サービス詳細へ</a></p>
+      </figcaption>
+      </figure>
+
+    </div>
+    <div class="serviceinfo1">
+      <figure>
+      <img src="img/furuki.png" alt="furuki">
+      <figcaption>
+        <p>国内最大規模のユーズドショッププラットフォーム。全国で人気の古着屋が集結し、ユーズドブランド品や一点ものアイテムを購入できます。</p>
+        <p><a href="#">サービス詳細へ</a></p>
+      </figcaption>
+      </figure>
+
+      <figure>
+      <img src="img/woman.png" alt="woman">
+      <figcaption>
+        <p>女性の多様な働き方を支援するクラウドソーシングサービスです。自宅にいながら時間や場所を選ばず、インターネットでお仕事ができます。</p>
+        <p><a href="#">サービス詳細へ</a></p>
+      </figcaption>
+      </figure>
+
+      <figure>
+      <img src="img/bk2.png" alt="bk2">
+      <figcaption>
+        <p>アラサーアラフォー全員集合！bk2（ビーケーツー）は25歳以上の大人限定コミュニティ。趣味で繋がるSNS始めませんか？</p>
+        <p><a href="#">サービス詳細へ</a></p>
+      </figcaption>
+      </figure>
+
+      <figure>
+      <img src="img/tell_me.png" alt="tellme"class="last">
+      <figcaption>
+        <p>完全匿名のQ＆Aコミュニティ　即レス5分！回答率99％！気軽に質問してみよう♪</p>
+        <p><a href="#">サービス詳細へ</a></p>
+      </figcaption>
+      </figure>
+
+    </div>
+
+    <div class="signright"><img src="img/right.png" alt="right" ></div>
+
+    <div class="uline"><img src="img/line.png" alt="bline"></div>
+  </div>
+
+  <div id="newrelease">
+    <img src="img/new_release.png" alt="newrelease">
+  </div>
+
+  <div id="releaseitem">
+    <div class="rbanner">
+      <div class="itembanner"><img src="img/rpg.png" alt="bannerrpg"></div>
+      <h3>ギャンブルRPG</h3>
+      <h4>カテゴリ：ゲーム</h4>
+      <p>あなたの運で世界を救え！ルーレットで戦う新感覚ゲーム「ギャンブルRPG」</p>
+      <div class="plati"><img src="img/plat.png" alt="plat">
+      </div>
+    </div>
+
+    <div class="rbanner">
+      <div class="itembanner"><img src="img/one_01.png" alt="one"></div>
+      <h3>オネェ学園～
+      乙女部へようこそ～</h3>
+      <h4>カテゴリ：ゲーム</h4>
+      <p>ついに…”オネェ”に恋する乙女ゲームが登場！</p>
+      <div class="plati"><img src="img/plat.png" alt="plat">
+      </div>
+    </div>
+
+    <div class="rbanner">
+      <div class="itembanner"><img src="img/awa_01.png" alt="awa" /></div>
+      <h3>AWA</h3>
+      <h4>カテゴリ：音楽</h4>
+      <p>国内最大級の楽曲数を誇る定額制音楽配信サービス。</p>
+      <div class="plati"><img src="img/plat.png" alt="plat">
+      </div>
+    </div>
+
+    <div class="rbanner">
+      <div class="itembanner"><img src="img/moyashi.png" alt="moyashi"></div>
+      <h3>もやししゃちょー</h3>
+      <h4>カテゴリ：ゲーム</h4>
+      <p>あの大人気Youtuber「はじめしゃちょー」がゲームアプリ化！</p>
+      <div class="plati"><img src="img/plat.png" alt="plat">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+  <div id="footerimg">
+    <img src="img/footer_banner.png" alt="footerbanner_01" >
+    <img src="img/footer_banner01.png" alt="footerbanner_02" />
+    <img src="img/footer_banner02.png" alt="footerbanner_03" />
+    <img src="img/footer_banner04.png" alt="footerbanner_04" />
+  </div>
+
+  <div>
+    <nav id="fnav">
+      <ul>
+        <li>サイトマップ</li>
+        <li>プライバシーポリシー</li>
+        <li>ディスクロージャー</li>
+        <li>ポリシーサイト</li>
+        <li>ご利用方法免責事項</li>
+        <li>おすすめルート</li>
+      </ul>
+    </nav>
+  </div>
+  <p>Copyright © CyberAgent, Inc. All Rights Reserved.</p>
+  </footer>
+</div>
+
+
+</body>
+</html>
