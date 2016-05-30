@@ -1,0 +1,137 @@
+body{
+  font-family: Calibri , "Hiragino Kaku Gothic ProN" , "游ゴシック" , "Yu Gothic" , "メイリオ", Helvetica,   Arial, sans-serif;
+font-size: 12px;
+line-height: 1.5;
+}
+
+/*全体の指定*/
+
+#wrapper{
+  width: 1400px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+}
+
+
+header{
+  background-image: url("../img/main.png");
+  background-size: cover;
+  height: 625px;
+}
+#gnav a{
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.11em;
+}
+
+#gnav a:hover{
+  color: #666666;
+}
+
+#gnav{
+  width: 570px;
+  height: 40px;
+}
+
+#gnav ul{
+  padding-left: 640px;
+  padding-top: 40px;
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tnav{
+  width: 1280px;
+  margin: auto;
+}
+
+h1{
+  padding-left: 117px;
+  padding-top: 470px;
+}
+
+#booktitle{
+  padding-left: 910px;
+}
+
+#bookarea{
+  margin-top: 30px;
+  display: flex;
+}
+
+#concept{
+  margin-top: 37px;
+  margin-left: 60px;
+}
+#form{
+  width: 525px;
+  height: 330px;
+  padding-left: 83px;
+}
+.sub {
+  display: flex;
+}
+
+.sub p{
+  padding-left: 16px;
+  width: 151px;
+  color: #777777;
+  font-size: 24px;
+  letter-spacing: 0.11em;
+  text-align: center;
+}
+#tel{
+  margin-top: 49px;
+  margin-left: 27px;
+}
+
+#bookbutton{
+  margin-top: 49px;
+  margin-left: 32px;
+}
+
+#tablebg{
+  margin-top: 37px;
+  width: 1400px;
+  height: 600px;
+  background-image: url("../img/plan_back.png");
+}
+
+#plan{
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 1170px;
+  overflow: hidden;
+}
+
+#plan li{
+  float: left;
+  margin-right: 50px;
+  height: 179px;
+  width: 560px;
+  position: relative;
+}
+
+#plan li:nth-child(2),#plan li:nth-child(4){
+ margin-right: 0;
+}
+/*プランのリスト*/
+#plan li:nth-child(3),#plan li:nth-child(4){
+  margin-top: 50px;
+}
+
+#plan li img{
+  position: absolute;
+}
+
+#plan li p {
+  color: #ffffff;
+  padding: 80px 0;
+  width: 560px;
+  height: 180px;
+  position: absolute;
+  text-align: center;
+}
+/*リストフォント*/
